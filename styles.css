@@ -1,0 +1,31 @@
+
+.imagem-item {
+    width: 253px;
+    height: 253px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.container-texto {
+    height: 178px;
+}
+
+.bg-cuiaba {
+    background-color: #94D82D;
+}
+
+.logo {
+    object-fit: contain;
+    max-height: 40px;
+}
+
+.logo-title {
+    color: #ffe066;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.logo-title span {
+    color: #2F9E44;
+    font-size: 24px;
+}
