@@ -1,306 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>New Dourado Store</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Cabeçalho (Header) -->
-<nav class="navbar navbar-expand navbar-light bg-cuiaba justify-content-between">
-    <div class="d-flex align-items-center">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Cuiab%C3%A1_Esporte_Clube_logo.svg/1200px-Cuiab%C3%A1_Esporte_Clube_logo.svg.png" class="logo" alt="Dourado Store">
+    <nav
+      class="navbar navbar-expand navbar-light bg-cuiaba justify-content-between"
+    >
+      <div class="d-flex align-items-center">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Cuiab%C3%A1_Esporte_Clube_logo.svg/1200px-Cuiab%C3%A1_Esporte_Clube_logo.svg.png"
+          class="logo"
+          alt="Dourado Store"
+        />
         <p class="m-0 ml-3 logo-title">DOURADO<span>STORE</span></p>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Vestimenta
+          </a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item-group">
+              <a class="dropdown-item" href="#">Camisas</a>
+              <a class="dropdown-item" href="#">Calças</a>
+              <a class="dropdown-item" href="#">Calções</a>
+              <a class="dropdown-item" href="#">Agasalhos e Jaquetas</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-item-group">
+              <a class="dropdown-item" href="#">Regatas</a>
+              <a class="dropdown-item" href="#">Bermudas</a>
+              <a class="dropdown-item" href="#">Meiões e Meias</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Acessórios
+          </a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item-group">
+              <a class="dropdown-item" href="#">Bonés</a>
+              <a class="dropdown-item" href="#">Bolsas</a>
+              <a class="dropdown-item" href="#">Malas</a>
+              <a class="dropdown-item" href="#">Mochilas</a>
+              <a class="dropdown-item" href="#">Relógios</a>
+              <a class="dropdown-item" href="#">Carteiras</a>
+              <a class="dropdown-item" href="#">Cordão</a>
+              <a class="dropdown-item" href="#">Bandeiras</a>
+              <a class="dropdown-item" href="#">Bolas</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-item-group">
+              <a class="dropdown-item" href="#">Chaveiros</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Bebidas
+          </a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item-group">
+              <a class="dropdown-item" href="#">Canecas</a>
+              <a class="dropdown-item" href="#">Copos</a>
+              <a class="dropdown-item" href="#">Taças</a>
+              <a class="dropdown-item" href="#">Squeezes</a>
+              <a class="dropdown-item" href="#">Abridores</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-item-group">
+              <a class="dropdown-item" href="#">Chimarrão</a>
+              <a class="dropdown-item" href="#">Tereré</a>
+              <a class="dropdown-item" href="#">Cooler</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Outros
+          </a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item-group">
+              <a class="dropdown-item" href="#">Cuiabanas</a>
+              <a class="dropdown-item" href="#">Linha Pet</a>
+              <a class="dropdown-item" href="#">Churrasco</a>
+              <a class="dropdown-item" href="#">Miniatura</a>
+              <a class="dropdown-item" href="#">Personalizações</a>
+              <a class="dropdown-item" href="#">Quadros</a>
+              <a class="dropdown-item" href="#">Torcida Baby</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input
+          id="pesquisar-input"
+          class="form-control"
+          type="text"
+          placeholder="Pesquisar"
+          aria-label="Pesquisar"
+        />
+        <button
+          id="pesquisar-btn"
+          class="btn btn-outline-primary my-2 my-sm-0"
+          type="submit"
+        >
+          Pesquisar
+        </button>
+      </form>
+    </nav>
+
+    <!-- Banner -->
+    <div class="container mt-4 d-flex justify-content-center">
+      <button id="banner-prev" class="banner-btn"><</button>
+      <img
+        id="banner-img"
+        src="https://cdn.awsli.com.br/1920x1920/1080/1080006/banner/whatsapp-image-2023-08-07-at-10-11-39-o9g8r51kv6.jpeg"
+        alt="Camisa Jogador 01 Masculina 23/24"
+        draggable="false"
+        class="img-fluid"
+      />
+      <button id="banner-next" class="banner-btn">></button>
     </div>
-    <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                Vestimenta
-            </a>
-            <div class="dropdown-menu">
-                <div class="dropdown-item-group">
-                    <a class="dropdown-item" href="#">Camisas</a>
-                    <a class="dropdown-item" href="#">Calças</a>
-                    <a class="dropdown-item" href="#">Calções</a>
-                    <a class="dropdown-item" href="#">Agasalhos e Jaquetas</a>
-                </div>
-                <div class="dropdown-divider"></div>
-                <div class="dropdown-item-group">
-                    <a class="dropdown-item" href="#">Regatas</a>
-                    <a class="dropdown-item" href="#">Bermudas</a>
-                    <a class="dropdown-item" href="#">Meiões e Meias</a>
-                </div>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                Acessórios
-            </a>
-            <div class="dropdown-menu">
-                <div class="dropdown-item-group">
-                    <a class="dropdown-item" href="#">Bonés</a>
-                    <a class="dropdown-item" href="#">Bolsas</a>
-                    <a class="dropdown-item" href="#">Malas</a>
-                    <a class="dropdown-item" href="#">Mochilas</a>
-                    <a class="dropdown-item" href="#">Relógios</a>
-                    <a class="dropdown-item" href="#">Carteiras</a>
-                    <a class="dropdown-item" href="#">Cordão</a>
-                    <a class="dropdown-item" href="#">Bandeiras</a>
-                    <a class="dropdown-item" href="#">Bolas</a>
-                </div>
-                <div class="dropdown-divider"></div>
-                <div class="dropdown-item-group">
-                    <a class="dropdown-item" href="#">Chaveiros</a>
-                </div>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                Bebidas
-            </a>
-            <div class="dropdown-menu">
-                <div class="dropdown-item-group">
-                    <a class="dropdown-item" href="#">Canecas</a>
-                    <a class="dropdown-item" href="#">Copos</a>
-                    <a class="dropdown-item" href="#">Taças</a>
-                    <a class="dropdown-item" href="#">Squeezes</a>
-                    <a class="dropdown-item" href="#">Abridores</a>
-                </div>
-                <div class="dropdown-divider"></div>
-                <div class="dropdown-item-group">
-                    <a class="dropdown-item" href="#">Chimarrão</a>
-                    <a class="dropdown-item" href="#">Tereré</a>
-                    <a class="dropdown-item" href="#">Cooler</a>
-                </div>
-                </div>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                Outros
-            </a>
-            <div class="dropdown-menu">
-                <div class="dropdown-item-group">
-                    <a class="dropdown-item" href="#">Cuiabanas</a>
-                    <a class="dropdown-item" href="#">Linha Pet</a>
-                    <a class="dropdown-item" href="#">Churrasco</a>
-                    <a class="dropdown-item" href="#">Miniatura</a>
-                    <a class="dropdown-item" href="#">Personalizações</a>
-                    <a class="dropdown-item" href="#">Quadros</a>
-                    <a class="dropdown-item" href="#">Torcida Baby</a>
-                </div>
-            </div>
-        </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-        <input class="form-control" type="text" placeholder="Pesquisar" aria-label="Pesquisar">
-        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
-    </form> 
-</nav>
 
-<!-- Banner -->
-<div class="container mt-4 ">
-    <img src="https://cdn.awsli.com.br/1920x1920/1080/1080006/banner/whatsapp-image-2023-08-07-at-10-11-39-o9g8r51kv6.jpeg" alt="Camisa Jogador 01 Masculina 23/24" draggable="false" class="img-fluid">
-</div>
-
-<!-- Seção de "Mais Vendidos" -->
-<div class="container mt-4">
-    <h2 class="mb-4">Mais Vendidos</h2>
-    <div class="row">
+    <!-- Seção de "Mais Vendidos" -->
+    <div class="container mt-4">
+      <h2 id="titulo-mais-vendidos" class="mb-4">Mais Vendidos</h2>
+      <div class="row">
         <!-- Item 1 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/232441287c7d03e57cb.jpg" class="card-img-top imagem-item" alt="Item 1">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa 2 Cuiabá</h5>
-                    <p class="card-text">A camisa branca do douradão.</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/232441287c7d03e57cb.jpg"
+              class="card-img-top imagem-item"
+              alt="Item 1"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa 2 Cuiabá</h5>
+              <p class="card-text">A camisa branca do douradão.</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
         <!-- Item 2 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/221647814/whatsapp-image-2-8xbkl968od.jpeg" class="card-img-top imagem-item" alt="Item 2">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa 1 Cuiabá</h5>
-                    <p class="card-text">A principal camisa do douradão</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/221647814/whatsapp-image-2-8xbkl968od.jpeg"
+              class="card-img-top imagem-item"
+              alt="Item 2"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa 1 Cuiabá</h5>
+              <p class="card-text">A principal camisa do douradão</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
         <!-- Item 3 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/219317940/WhatsApp%20Image%202023-05-26%20at%2010.01.14.jpeg" class="card-img-top imagem-item" alt="Item 3">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa de técnico</h5>
-                    <p class="card-text">A camisa do técnico do douradão</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/219317940/WhatsApp%20Image%202023-05-26%20at%2010.01.14.jpeg"
+              class="card-img-top imagem-item"
+              alt="Item 3"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa de técnico</h5>
+              <p class="card-text">A camisa do técnico do douradão</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
         <!-- Item 4 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/226950804/whatsapp-image-2023-08-01-at-14-18-43-fsnfi9bfrm.jpeg" class="card-img-top imagem-item" alt="Item 4">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa de goleiro</h5>
-                    <p class="card-text">A camisa do guarda redes do douradão</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/226950804/whatsapp-image-2023-08-01-at-14-18-43-fsnfi9bfrm.jpeg"
+              class="card-img-top imagem-item"
+              alt="Item 4"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa de goleiro</h5>
+              <p class="card-text">A camisa do guarda redes do douradão</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
-    </div>
-    <div class="row">
+      </div>
+      <div class="row">
         <!-- Item 1 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/232441287c7d03e57cb.jpg" class="card-img-top imagem-item" alt="Item 1">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa 2 Cuiabá</h5>
-                    <p class="card-text">A camisa branca do douradão.</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/232441287c7d03e57cb.jpg"
+              class="card-img-top imagem-item"
+              alt="Item 1"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa 2 Cuiabá</h5>
+              <p class="card-text">A camisa branca do douradão.</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
         <!-- Item 2 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/221647814/whatsapp-image-2-8xbkl968od.jpeg" class="card-img-top imagem-item" alt="Item 2">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa 1 Cuiabá</h5>
-                    <p class="card-text">A principal camisa do douradão</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/221647814/whatsapp-image-2-8xbkl968od.jpeg"
+              class="card-img-top imagem-item"
+              alt="Item 2"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa 1 Cuiabá</h5>
+              <p class="card-text">A principal camisa do douradão</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
         <!-- Item 3 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/219317940/WhatsApp%20Image%202023-05-26%20at%2010.01.14.jpeg" class="card-img-top imagem-item" alt="Item 3">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa de técnico</h5>
-                    <p class="card-text">A camisa do técnico do douradão</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/219317940/WhatsApp%20Image%202023-05-26%20at%2010.01.14.jpeg"
+              class="card-img-top imagem-item"
+              alt="Item 3"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa de técnico</h5>
+              <p class="card-text">A camisa do técnico do douradão</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
         <!-- Item 4 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/226950804/whatsapp-image-2023-08-01-at-14-18-43-fsnfi9bfrm.jpeg" class="card-img-top imagem-item" alt="Item 4">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa de goleiro</h5>
-                    <p class="card-text">A camisa do guarda redes do douradão</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/226950804/whatsapp-image-2023-08-01-at-14-18-43-fsnfi9bfrm.jpeg"
+              class="card-img-top imagem-item"
+              alt="Item 4"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa de goleiro</h5>
+              <p class="card-text">A camisa do guarda redes do douradão</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
-    </div>
-    <div class="row">
+      </div>
+      <div class="row">
         <!-- Item 1 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/232441287c7d03e57cb.jpg" class="card-img-top imagem-item" alt="Item 1">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa 2 Cuiabá</h5>
-                    <p class="card-text">A camisa branca do douradão.</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/232441287c7d03e57cb.jpg"
+              class="card-img-top imagem-item"
+              alt="Item 1"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa 2 Cuiabá</h5>
+              <p class="card-text">A camisa branca do douradão.</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
         <!-- Item 2 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/221647814/whatsapp-image-2-8xbkl968od.jpeg" class="card-img-top imagem-item" alt="Item 2">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa 1 Cuiabá</h5>
-                    <p class="card-text">A principal camisa do douradão</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/221647814/whatsapp-image-2-8xbkl968od.jpeg"
+              class="card-img-top imagem-item"
+              alt="Item 2"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa 1 Cuiabá</h5>
+              <p class="card-text">A principal camisa do douradão</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
         <!-- Item 3 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/219317940/WhatsApp%20Image%202023-05-26%20at%2010.01.14.jpeg" class="card-img-top imagem-item" alt="Item 3">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa de técnico</h5>
-                    <p class="card-text">A camisa do técnico do douradão</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/219317940/WhatsApp%20Image%202023-05-26%20at%2010.01.14.jpeg"
+              class="card-img-top imagem-item"
+              alt="Item 3"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa de técnico</h5>
+              <p class="card-text">A camisa do técnico do douradão</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
         <!-- Item 4 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/226950804/whatsapp-image-2023-08-01-at-14-18-43-fsnfi9bfrm.jpeg" class="card-img-top imagem-item" alt="Item 4">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa de goleiro</h5>
-                    <p class="card-text">A camisa do guarda redes do douradão</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/226950804/whatsapp-image-2023-08-01-at-14-18-43-fsnfi9bfrm.jpeg"
+              class="card-img-top imagem-item"
+              alt="Item 4"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa de goleiro</h5>
+              <p class="card-text">A camisa do guarda redes do douradão</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
-    </div>
-    <div class="row">
+      </div>
+      <div class="row">
         <!-- Item 1 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/232441287c7d03e57cb.jpg" class="card-img-top imagem-item" alt="Item 1">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa 2 Cuiabá</h5>
-                    <p class="card-text">A camisa branca do douradão.</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/232441287c7d03e57cb.jpg"
+              class="card-img-top imagem-item"
+              alt="Item 1"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa 2 Cuiabá</h5>
+              <p class="card-text">A camisa branca do douradão.</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
         <!-- Item 2 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/221647814/whatsapp-image-2-8xbkl968od.jpeg" class="card-img-top imagem-item" alt="Item 2">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa 1 Cuiabá</h5>
-                    <p class="card-text">A principal camisa do douradão</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/221647814/whatsapp-image-2-8xbkl968od.jpeg"
+              class="card-img-top imagem-item"
+              alt="Item 2"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa 1 Cuiabá</h5>
+              <p class="card-text">A principal camisa do douradão</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
         <!-- Item 3 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/219317940/WhatsApp%20Image%202023-05-26%20at%2010.01.14.jpeg" class="card-img-top imagem-item" alt="Item 3">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa de técnico</h5>
-                    <p class="card-text">A camisa do técnico do douradão</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/219317940/WhatsApp%20Image%202023-05-26%20at%2010.01.14.jpeg"
+              class="card-img-top imagem-item"
+              alt="Item 3"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa de técnico</h5>
+              <p class="card-text">A camisa do técnico do douradão</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
         <!-- Item 4 -->
         <div class="col-lg-3 mb-4">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/226950804/whatsapp-image-2023-08-01-at-14-18-43-fsnfi9bfrm.jpeg" class="card-img-top imagem-item" alt="Item 4">
-                <div class="card-body container-texto">
-                    <h5 class="card-title">Camisa de goleiro</h5>
-                    <p class="card-text">A camisa do guarda redes do douradão</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
+          <div class="card">
+            <img
+              src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/226950804/whatsapp-image-2023-08-01-at-14-18-43-fsnfi9bfrm.jpeg"
+              class="card-img-top imagem-item"
+              alt="Item 4"
+            />
+            <div class="card-body container-texto">
+              <h5 class="card-title">Camisa de goleiro</h5>
+              <p class="card-text">A camisa do guarda redes do douradão</p>
+              <a href="#" class="btn btn-primary btn-carrinho"
+                >Adicionar ao carrinho</a
+              >
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-      <!-- Rodapé (Footer) -->
-<footer class="bg-cuiaba text-white text-center p-3 mt-5">
-    <p>&copy; 2023 Dourado Store. Todos os direitos reservados.</p>
-</footer>
+    <!-- Rodapé (Footer) -->
+    <footer class="bg-cuiaba text-white text-center p-3 mt-5">
+      <p>&copy; 2023 Dourado Store. Todos os direitos reservados.</p>
+    </footer>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
 
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-</body>
+    <script>
+      // Método jQuery para adicionar um evento de clique ao botão de pesquisa
+      $(document).ready(function () {
+        $(".btn-carrinho").click(function () {
+          alert("Produto adicionado ao carrinho com sucesso!");
+        });
+      });
+
+      // Método jQuery para adicionar um evento de mouseover para alterar a cor do botão de pesquisa
+      $(document).ready(function () {
+        $("#pesquisar-btn").mouseover(function () {
+          $(this).css("background-color", "green");
+          $(this).css("border-color", "green");
+          $(this).css("color", "white");
+        });
+
+        // Adicionando evento de mouseout para restaurar a cor original
+        $("#pesquisar-btn").mouseout(function () {
+          $(this).css("background-color", "transparent");
+          $(this).css("border-color", "green");
+          $(this).css("color", "white");
+        });
+      });
+
+      $(document).ready(function () {
+        // Imagens do banner
+        var imagensBanner = [
+          "https://cdn.awsli.com.br/1920x1920/1080/1080006/banner/whatsapp-image-2023-08-07-at-10-11-39-o9g8r51kv6.jpeg",
+          "https://cdn.awsli.com.br/1920x1920/1080/1080006/banner/whatsapp-image-2023-08-07-at-11-24-00-93ki1x7ql8.jpeg",
+          "https://cdn.awsli.com.br/1920x1920/1080/1080006/banner/whatsapp-image-2023-06-21-at-16-16-38--2--diaq4sip4t.jpeg",
+        ];
+
+        // Índice do banner atual
+        var indiceAtual = 0;
+
+        // Atualiza a src da imagem com base no índice atual
+        function atualizarImagem() {
+          $("#banner-img").attr("src", imagensBanner[indiceAtual]);
+        }
+
+        // Evento de clique no botão de avançar
+        $("#banner-next").click(function () {
+          // Se estiver no último banner, volta para o primeiro
+          if (indiceAtual === imagensBanner.length - 1) {
+            indiceAtual = 0;
+            // Se não, passa para o próximo banner
+          } else {
+            indiceAtual = indiceAtual + 1;
+          }
+          atualizarImagem();
+        });
+
+        // Evento de clique no botão de retroceder
+        $("#banner-prev").click(function () {
+          // Se estiver no primeiro banner, volta para o último
+          if (indiceAtual === 0) {
+            indiceAtual = imagensBanner.length - 1;
+            // Se não, volta para o banner anterior
+          } else {
+            indiceAtual = indiceAtual - 1;
+          }
+          atualizarImagem();
+        });
+      });
+
+      // Método jQuery para alterar a cor do input quando focado
+      $(document).ready(function () {
+        $("#pesquisar-input").focus(function () {
+          $(this).css("background-color", "#ffe066");
+          $(this).css("border-color", "#ffe066");
+          $(this).css("box-shadow", "none");
+        });
+
+        // Adicionando evento blur para restaurar a cor original
+        $("#pesquisar-input").blur(function () {
+          $(this).css("background-color", "#fff");
+          $(this).css("border-color", "");
+        });
+      });
+    </script>
+  </body>
 </html>
