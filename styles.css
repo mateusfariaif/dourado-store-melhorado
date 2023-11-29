@@ -1,31 +1,44 @@
-
 .imagem-item {
-    width: 253px;
-    height: 253px;
-    object-fit: cover;
-    object-position: top;
+  width: 253px;
+  height: 253px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .container-texto {
-    height: 178px;
+  height: 178px;
 }
 
 .bg-cuiaba {
-    background-color: #94D82D;
+  background-color: #94d82d;
 }
 
 .logo {
-    object-fit: contain;
-    max-height: 40px;
+  object-fit: contain;
+  max-height: 40px;
 }
 
 .logo-title {
-    color: #ffe066;
-    font-size: 48px;
-    font-weight: 700;
+  color: #ffe066;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .logo-title span {
-    color: #2F9E44;
-    font-size: 24px;
+  color: #2f9e44;
+  font-size: 24px;
+}
+
+.banner-btn {
+  background-color: #ffe066;
+  border: 1px solid #000;
+}
+
+.banner-btn:active {
+  transform: translateY(1px);
+}
+
+#pesquisar-btn {
+  color: green;
+  border-color: green;
 }
